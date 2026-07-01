@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Password Protected Video</title>
+
+<style>
+body{
+    font-family:Arial, sans-serif;
+    background:#f4f4f4;
+    text-align:center;
+    padding:40px;
+}
+
+#videoSection{
+    display:none;
+}
+
+video{
+    width:80%;
+    max-width:800px;
+    border-radius:10px;
+    box-shadow:0 5px 15px rgba(0,0,0,0.3);
+}
+
+input{
+    padding:10px;
+    width:250px;
+    font-size:16px;
+}
+
+button{
+    padding:10px 20px;
+    font-size:16px;
+    cursor:pointer;
+    margin-left:10px;
+}
+
+#error{
+    color:red;
+    margin-top:15px;
+}
+</style>
+
+</head>
+<body>
+
+<h1>Protected Video</h1>
+
+<div id="login">
+    <h3>Enter Password to Watch the Video</h3>
+
+    <input type="password" id="password" placeholder="Enter Password">
+    <button onclick="checkPassword()">Open Video</button>
+
+    <p id="error"></p>
+</div>
+
+<div id="videoSection">
+    <h2>Welcome!</h2>
+
+    <video controls autoplay muted loop>
+        <source src="felix3.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+</div>
+
+<script>
+function checkPassword(){
+
+    var password = document.getElementById("password").value;
+
+    if(password === "bmw123"){
+        document.getElementById("login").style.display = "none";
+        document.getElementById("videoSection").style.display = "block";
+    }
+    else{
+        document.getElementById("error").innerHTML = "Incorrect Password!";
+    }
+
+}
+</script>
+
+</body>
+</html>

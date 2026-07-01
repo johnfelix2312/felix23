@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>BMW M4 Website</title>
+<style>
+    *{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial,sans-serif;
+}
+html{
+    scroll-behavior:smooth;
+}
+body{
+    background:#f4f4f4;
+}
+nav{
+    background:#000000;
+    position:sticky;
+    top:0;
+    z-index:1000;
+    padding:18px;
+}
+
+nav ul{
+    display:flex;
+    justify-content:center;
+    list-style:none;
+}
+
+nav ul li{
+    margin:0 20px;
+}
+
+nav ul li a{
+    color:white;
+    text-decoration:none;
+    font-weight:bold;
+    transition:.3s;
+}
+
+nav ul li a:hover{
+    color:orange;
+}
+.hero{
+    height:100vh;
+    background:
+    linear-gradient(rgba(0,0,0,.5),rgba(0,0,0,.5)),
+    url("felix.jpeg");
+    background-size:cover;
+    background-position:center;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    flex-direction:column;
+    color:white;
+    text-align:center;
+}
+
+.hero h1{
+    font-size:75px;
+    margin-bottom:20px;
+    text-shadow:3px 3px 10px black;
+}
+
+.hero p{
+    font-size:25px;
+    margin-bottom:30px;
+}
+
+.btn{
+    text-decoration:none;
+    background:orange;
+    color:white;
+    padding:15px 35px;
+    border-radius:30px;
+    font-weight:bold;
+    transition:.4s;
+}
+.btn:hover{
+    background:white;
+    color:black;
+}
+section{
+    padding:70px 10%;
+}
+section h2{
+    text-align:center;
+    font-size:40px;
+    margin-bottom:35px;
+}
+.about{
+    font-size:20px;
+    text-align:center;
+    line-height:1.8;
+}
+.services{
+    display:flex;
+    justify-content:center;
+    flex-wrap:wrap;
+    gap:25px;
+}
+
+.card{
+    width:300px;
+    background:white;
+    padding:25px;
+    border-radius:15px;
+    box-shadow:0 5px 15px rgba(0,0,0,.2);
+    transition:.4s;
+    text-align:center;
+}
+
+.card:hover{
+    transform:translateY(-10px);
+}
+.card h3{
+    color:orange;
+    margin-bottom:15px;
+}
+.portfolio{
+    display:flex;
+    justify-content:center;
+    flex-wrap:wrap;
+    gap:20px;
+}
+.portfolio img{
+    width:320px;
+    border-radius:15px;
+    box-shadow:0 5px 15px rgba(0,0,0,.3);
+    transition:.5s;
+}
+.portfolio img:hover{
+    transform:scale(1.05);
+}
+.contact{
+    text-align:center;
+    background:#e8e8e8;
+    border-radius:15px;
+}
+.contact p{
+    margin:12px;
+    font-size:20px;
+}
+footer{
+    background:#000;
+    color:white;
+    text-align:center;
+    padding:20px;
+}
+
+</style>
+</head>
+
+<body>
+
+<nav>
+<ul>
+<li><a href="#">Home</a></li>
+<li><a href="#about">About</a></li>
+<li><a href="#gallery">Gallery</a></li>
+<li><a href="#features">Features</a></li>
+<li><a href="#contact">Contact</a></li>
+</ul>
+</nav>
+
+<div class="hero">
+
+<h1>BMW M4</h1>
+
+<p>The Ultimate Driving Machine</p>
+
+<a href="#gallery" class="btn">View Gallery</a>
+
+</div>
+
+<section id="about">
+
+<h2>About BMW M4</h2>
+
+<p class="about">
+
+The BMW M4 Competition is a luxury high-performance sports coupe powered by a 3.0L 
+BMW M TwinPower Turbo inline-6 engine producing up to 503 horsepower. 
+It combines aggressive styling, premium comfort, advanced technology, 
+and outstanding driving performance.
+
+</p>
+</section>
+<section id="gallery">
+
+<h2>BMW M4 Gallery</h2>
+
+<div class="portfolio">
+
+<img src="felix6.jpg" alt="BMW M4">
+
+<img src="felix7.jpg" alt="BMW M4">
+
+<img src="felix.9.avif" alt="BMW M4">
+
+</div>
+
+</section>
+
+<section id="features">
+
+<h2>BMW M4 Features</h2>
+
+<div class="services">
+
+<div class="card">
+<h3>503 HP Engine</h3>
+<p>
+3.0L TwinPower Turbo inline-6 engine with breathtaking acceleration.
+</p>
+</div>
+
+<div class="card">
+<h3>Luxury Interior</h3>
+<p>
+Premium leather seats, digital display, Harman Kardon sound system, and ambient lighting.
+</p>
+</div>
+<div class="card">
+<h3>M Performance</h3>
+<p>
+Adaptive suspension, M xDrive AWD, sport exhaust, and track-ready handling.
+</p>
+</div>
+</div>
+</section>
+<section id="contact" class="contact">
+<h2>Contact</h2>
+<p>Email:bmwm4@gmail.com</p>
+<p>Phone:+91 8903304148</p>
+<p>Location:India</p>
+
+</section>
+
+<footer>
+
+<p>© 2026 BMW M4 Website | The Ultimate Driving Machine</p>
+
+</footer>
+
+</body>
+</html>

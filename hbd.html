@@ -29,11 +29,11 @@ body{
     font-family:"Segoe UI",Arial,sans-serif;
     color:#fff;
 
-    /* ROYAL MIDNIGHT BLUE */
+    /* BLACK + ROYAL GOLD PREMIUM THEME */
     background:
-        radial-gradient(circle at 15% 20%,#70caff25,transparent 28%),
-        radial-gradient(circle at 85% 80%,#8caeff22,transparent 28%),
-        linear-gradient(135deg,#020817,#081a35,#030916);
+        radial-gradient(circle at 15% 20%,#D9AD7525,transparent 28%),
+        radial-gradient(circle at 85% 80%,#B8895022,transparent 28%),
+        linear-gradient(135deg,#090807,#15110E,#090807);
 }
 
 /* STARS */
@@ -42,8 +42,8 @@ body{
     inset:0;
     pointer-events:none;
     background-image:
-        radial-gradient(#eaf6ff 1px,transparent 1px),
-        radial-gradient(#91cfff 1px,transparent 1px);
+        radial-gradient(#F8F1E7 1px,transparent 1px),
+        radial-gradient(#D9AD75 1px,transparent 1px);
     background-size:55px 55px,95px 95px;
     animation:moveStars 12s linear infinite;
     opacity:.5;
@@ -69,7 +69,7 @@ body{
     padding:24px 20px;
 
     background:
-        radial-gradient(circle at center,#173c68,#07162d 55%,#020817);
+        radial-gradient(circle at center,#241A12,#090807 55%,#090807);
 
     transition:opacity 1s ease;
 }
@@ -82,21 +82,21 @@ body{
 .intro-heart{
     font-size:clamp(55px,12vw,85px);
     animation:heartbeat 1.2s infinite;
-    filter:drop-shadow(0 0 25px #8bd5ff);
+    filter:drop-shadow(0 0 25px #D9AD75);
 }
 
 .intro h1{
     margin-top:15px;
     font-size:clamp(34px,7vw,52px);
     line-height:1.15;
-    color:#bce8ff;
-    text-shadow:0 0 25px #70caff;
+    color:#F5D6A5;
+    text-shadow:0 0 25px #D9AD75;
 }
 
 .intro p{
     margin:20px auto 30px;
     max-width:430px;
-    color:#e1efff;
+    color:#E8D8C3;
     font-size:clamp(15px,2vw,18px);
     line-height:1.7;
 }
@@ -106,31 +106,31 @@ body{
     display:inline-block;
     max-width:100%;
     padding:15px 28px;
-    border:1px solid #dceeff;
+    border:1px solid #D9AD75;
     border-radius:50px;
 
     background:linear-gradient(
         135deg,
-        #bceaff,
-        #66bfff,
-        #dceeff
+        #F5D6A5,
+        #B88950,
+        #D9AD75
     );
 
-    color:#061a35;
+    color:#090807;
     font-size:clamp(15px,2vw,17px);
     font-weight:bold;
     cursor:pointer;
 
     box-shadow:
-        0 0 20px #70caff66,
-        0 0 35px #bceaff22;
+        0 0 20px #D9AD7566,
+        0 0 35px #F5D6A522;
 
     transition:transform .3s ease,box-shadow .3s ease;
 }
 
 .open-btn:hover{
     transform:scale(1.06);
-    box-shadow:0 0 35px #bceaff;
+    box-shadow:0 0 35px #F5D6A5;
 }
 
 .open-btn:active{
@@ -158,16 +158,16 @@ body{
     text-align:center;
     border-radius:clamp(22px,4vw,32px);
 
-    background:rgba(125,185,255,.07);
+    background:rgba(217,173,117,.07);
 
-    border:1px solid rgba(210,235,255,.35);
+    border:1px solid rgba(217,173,117,.35);
 
     backdrop-filter:blur(18px);
     -webkit-backdrop-filter:blur(18px);
 
     box-shadow:
-        0 0 50px #70caff20,
-        0 0 25px #dceeff12,
+        0 0 50px #D9AD7520,
+        0 0 25px #D9AD7512,
         inset 0 0 30px #ffffff08;
 
     overflow:hidden;
@@ -194,21 +194,21 @@ body{
     border-radius:50%;
     object-fit:cover;
 
-    border:4px solid #dceeff;
+    border:4px solid #D9AD75;
 
     box-shadow:
-        0 0 20px #70caff,
-        0 0 35px #dceeff55;
+        0 0 20px #D9AD75,
+        0 0 35px #D9AD7555;
 
     animation:photoGlow 2s infinite alternate;
 }
 
 @keyframes photoGlow{
     from{
-        box-shadow:0 0 15px #70caff;
+        box-shadow:0 0 15px #D9AD75;
     }
     to{
-        box-shadow:0 0 40px #dceeff;
+        box-shadow:0 0 40px #D9AD75;
     }
 }
 
@@ -217,8 +217,8 @@ body{
     margin-top:20px;
     font-size:clamp(34px,7vw,60px);
     line-height:1.15;
-    color:#bce8ff;
-    text-shadow:0 0 25px #70caff;
+    color:#F5D6A5;
+    text-shadow:0 0 25px #D9AD75;
 }
 
 .name{
@@ -231,7 +231,7 @@ body{
 
 .nickname{
     margin-top:10px;
-    color:#c7e8ff;
+    color:#E8D8C3;
     font-size:clamp(14px,3vw,18px);
     line-height:1.6;
 }
@@ -240,17 +240,17 @@ body{
 .message{
     width:100%;
     margin-top:20px;
-    color:#e5f2ff;
+    color:#E8D8C3;
     font-size:clamp(15px,2.5vw,17px);
     line-height:1.9;
     overflow-wrap:break-word;
 }
 
 .highlight{
-    color:#bce8ff;
+    color:#F5D6A5;
     font-size:clamp(17px,3vw,20px);
     font-weight:bold;
-    text-shadow:0 0 12px #70caff55;
+    text-shadow:0 0 12px #D9AD7555;
 }
 
 /* DIVIDER */
@@ -263,9 +263,9 @@ body{
     background:linear-gradient(
         90deg,
         transparent,
-        #dceeff,
-        #70caff,
-        #dceeff,
+        #D9AD75,
+        #D9AD75,
+        #D9AD75,
         transparent
     );
 }
@@ -278,26 +278,26 @@ body{
     padding:25px 15px;
     border-radius:22px;
 
-    background:rgba(125,185,255,.07);
+    background:rgba(217,173,117,.07);
 
-    border:1px solid #dceeff66;
+    border:1px solid #D9AD7566;
 
     box-shadow:
-        0 0 25px #70caff22,
+        0 0 25px #D9AD7522,
         inset 0 0 20px #ffffff08;
 
     animation:showLetter 1s ease;
 }
 
 .memories h2{
-    color:#bce8ff;
+    color:#F5D6A5;
     font-size:clamp(23px,5vw,30px);
     margin-bottom:12px;
-    text-shadow:0 0 15px #70caff;
+    text-shadow:0 0 15px #D9AD75;
 }
 
 .memories p{
-    color:#e1efff;
+    color:#E8D8C3;
     line-height:1.7;
     margin-bottom:20px;
     font-size:15px;
@@ -317,9 +317,9 @@ body{
     object-fit:cover;
     border-radius:14px;
 
-    border:2px solid #dceeff;
+    border:2px solid #D9AD75;
 
-    box-shadow:0 0 15px #70caff44;
+    box-shadow:0 0 15px #D9AD7544;
 
     transition:transform .3s ease;
 }
@@ -353,19 +353,19 @@ body{
 
     background:linear-gradient(
         145deg,
-        #f4f9ff,
-        #dceeff
+        #241A12,
+        #D9AD75
     );
 
-    color:#102b4a;
+    color:#F8F1E7;
     border-radius:18px;
     text-align:left;
     font-size:clamp(14px,2.5vw,16px);
     line-height:1.9;
 
     box-shadow:
-        0 0 25px #70caff44,
-        0 0 40px #dceeff22;
+        0 0 25px #D9AD7544,
+        0 0 40px #D9AD7522;
 
     overflow-wrap:break-word;
 }
@@ -373,7 +373,7 @@ body{
 .paper h2{
     margin-bottom:20px;
     text-align:center;
-    color:#174c80;
+    color:#F5D6A5;
     font-size:clamp(22px,4vw,28px);
     line-height:1.3;
 }
@@ -381,7 +381,7 @@ body{
 .signature{
     margin-top:25px;
     text-align:right;
-    color:#174c80;
+    color:#F5D6A5;
     font-weight:bold;
     line-height:1.7;
 }
@@ -393,9 +393,9 @@ body{
     padding:clamp(20px,4vw,28px) 15px;
     border-radius:20px;
 
-    background:rgba(112,202,255,.08);
+    background:rgba(217,173,117,.08);
 
-    border:1px solid #dceeff55;
+    border:1px solid #D9AD7555;
 }
 
 .ending-heart{
@@ -405,13 +405,13 @@ body{
 
 .ending h2{
     margin:15px 0;
-    color:#bce8ff;
+    color:#F5D6A5;
     font-size:clamp(22px,5vw,30px);
     line-height:1.4;
 }
 
 .ending p{
-    color:#e1efff;
+    color:#E8D8C3;
     font-size:clamp(15px,2.5vw,17px);
     line-height:1.8;
 }
@@ -425,15 +425,15 @@ body{
     width:48px;
     height:48px;
 
-    border:1px solid #dceeff;
+    border:1px solid #D9AD75;
 
     border-radius:50%;
-    background:linear-gradient(135deg,#174b83,#78caff);
+    background:linear-gradient(135deg,#B88950,#D9AD75);
     color:#fff;
     cursor:pointer;
     font-size:20px;
 
-    box-shadow:0 0 20px #70caff88;
+    box-shadow:0 0 20px #D9AD7588;
 }
 
 /* FLOATING HEARTS */
@@ -568,11 +568,11 @@ body{
         <h1>For My Ashiii</h1>
 
         <p>
-            Happy Birthday Chelloo 💙
+            Happy Birthday Chelloo 
         </p>
 
         <button class="open-btn" onclick="openPage()">
-            💙
+            🦋
         </button>
 
     </div>
@@ -669,7 +669,7 @@ body{
 
     <!-- LETTER BUTTON -->
     <button class="open-btn" onclick="openLetter()">
-        💌 
+        💌
     </button>
 
     <!-- LETTER -->
@@ -681,30 +681,33 @@ body{
 
             <h2>Chelloo... 💙</h2>
 
+            <br>
+
+            En life la nee vanthathu enakku kedaicha oru god's gift.
 
             <br>
-            En life la nee vanthathu enakku kedaicha oru god's gift.
-            <br>
-            Naan eppovume unaku support ah iruppen. 
+
+            Naan eppovume unaku support ah iruppen.
+
             <br><br>
+
             Nee santhoshama iruntha,
             naanum santhoshama irupen.
 
-           Nee kashtapattalum, un pakathula naan kandippa iruppen.
+            Nee kashtapattalum, un pakathula naan kandippa iruppen.
+
             <br><br>
+
             Unna eppovume thaniya feel panna vida maaten Pondatti... 🥹
 
             <br><br>
 
             Unna eppovume sirika vachittu, unna nalla paathukanum nu aasai.💙
 
-         
-
             <br><br>
 
-                Un kooda life full ah neraya azhagana memories create pannanum. 
-                Sandhosham, kovam, sanda, love nu ellathayum un koodave share pannanum. 💙
-            </b>
+            Un kooda life full ah neraya azhagana memories create pannanum.
+            Sandhosham, kovam, sanda, love nu ellathayum un koodave share pannanum. 💙
 
             <div class="signature">
                 Love you 😘😘
